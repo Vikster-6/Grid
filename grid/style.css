@@ -1,0 +1,532 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+header{
+    background-color: white;
+    padding: .5em 0 1em 0;
+    margin-bottom: em;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.logo{
+    padding: 1em 0 ;
+}
+.logo img{
+    width: 12em;
+}
+
+.navbar ul{
+    list-style: none;
+}
+.navbar ul li{
+    display: inline;
+}
+
+.navbar ul a{
+    text-decoration: none;
+    color: black;
+    padding: .5em;
+}
+.navbar ul li .current:hover{
+    color: rgb(0, 0, 0);
+    background-color: gray;
+}
+.navbar ul .current{
+    background-color: red;
+    color: white;
+}
+
+.hero{
+    background-image: url(featured.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.overlay{
+    background-color: rgba(0, 0, 0, 0.555);
+    width: 100%;
+    height: 100%;
+    padding: 4em 3em;
+    color: white;
+}
+
+.overlay .tag{
+    background-color: orange;
+    border-radius: 50px;
+    font-size: .6rem;
+}
+
+.content h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 100;
+    font-size: 1.9rem;
+    margin: .6em 0;
+}
+
+.content p{
+    line-height: 1.3em;
+    margin: 1em 0;
+}
+
+.overlay button{
+    background-color: red;
+    outline: none;
+    border: none;
+    color: white;
+    text-decoration: none;
+    padding: .7em;
+    font-weight: 100;
+}
+
+button a{
+    text-decoration: none;
+    color: white;
+}
+
+.editor{
+    padding: 4em;
+    background-color: rgb(226, 226, 226);
+}
+.editor .sec_head{
+    margin: 1em 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 100;
+}
+
+.card1{
+    background-color: white;
+    padding: 1.5em;
+    margin: 1em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.card1 .img{
+    background-image: url(entertainment1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 1em 0;
+    margin-bottom: 1em;
+    height: 100%;
+    width: 100%;
+}
+
+.editor .content h2{
+    margin: 1em 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 100;
+    font-size: 1.2rem;
+}
+.editor .content p{
+    font-weight: lighter;
+    line-height: 1.5em;
+}
+
+.editor button{
+    padding: .5em;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    background-color: blueviolet;
+    flex: 0 0 auto;
+    font-size: .7rem;
+}
+.card2{
+    background-color: rgb(36, 33, 33);
+    padding: 1.5em;
+    margin: 1em 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.card2 button{
+    background-color: orange;
+}
+
+.card3{
+    margin: em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.card3 .img{
+    background-image: url(Tech1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 1em 0;
+    height: 200px;
+    width: 100%;
+}
+
+.card3 button{
+    background-color: rgb(0, 81, 255);
+}
+.card4{
+    margin: 1em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.card4 .img{
+    background-image: url(sport1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 1em 0;
+    height: 200px;
+    width: 100%;
+}
+
+.card4 button{
+    background-color: blueviolet;
+}
+.card5{
+    margin: em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.card5 .img{
+    background-image: url(tech2.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 1em 0;
+    height: 200px;
+    width: 100%;
+}
+
+.card5 button{
+    background-color: rgb(0, 81, 255);
+}
+.card6{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: rgb(185, 6, 6);
+    padding: 1.5em;
+    color: white;
+}
+
+.card6 .img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 1em 0;
+    height: 200px;
+    width: 100%;
+}
+
+.card6 button{
+    background-color: orange;
+}
+
+.card7{
+    /* margin: 1em 0; */
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.card7 .img{
+    background-image: url(entertainment2.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* margin: 1em 0; */
+    height: 100%;
+    width: 100%;
+}
+
+.card7 button{
+    background-color: blueviolet;
+}
+
+.foot{
+    background-color: rgb(54, 54, 54);
+    color: white;
+    padding: 1em 2em 0 2em;
+    display: flex;
+    flex-direction: column;
+}
+.foot h3{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 100;
+    font-weight: lighter;
+    font-size: 1.2rem;
+}
+.logo_sec{
+    margin: .5em 0 .5em 0;
+}
+.logo_sec .logo{
+    padding: .7em 0;
+}
+.logo_sec .logo img{
+    width: 10em;
+}
+.logo_sec p{
+    font-size: 1em;
+    line-height: 1.4em;
+}
+
+.email{
+    margin: 1em 0;
+}
+.email h3{
+    margin-bottom: 1em;
+}
+.email p{
+    margin-bottom: .5em;
+}
+input{
+    display: block;
+    width: 90%;
+}
+input[type="email"] {
+    height: 2em;
+    padding: .5em;
+  }
+.email button {
+    height: 2.5em;
+    width: 90%;
+    padding: .5em;
+    text-align: center;
+    background-color: rgb(207, 0, 0);
+    border: none;
+    border-radius: 6px;
+    margin: .5em 0;
+    color: white;
+  }
+  
+  .links{
+    margin-bottom: 1em;
+  }
+  .links ul{
+    padding: .7em .5em;
+    list-style: none;
+  }
+  .links ul li{
+    padding: .2em 0;
+  }
+  .links a{
+    text-decoration: none;
+    color: white;
+  }
+
+  .club {
+    margin-bottom: 2em;
+  }
+  .club p{
+    padding: 0;
+    margin: 0;
+  }
+  .club .p2{
+    padding: 0;
+    margin-top: 1em;
+  }
+
+  .club button{
+    padding: 1em;
+    border: none;
+    color: white;
+    background-color: rgb(255, 136, 0);
+  }
+
+  .copyright p{
+    background-color: #5c5c5c;
+    color: white;
+    text-align: center;
+    padding: .2em 0;
+  }
+
+
+  /* about side */
+  .about_sec{
+    background-color: rgb(226, 226, 226);
+    padding: 3em;
+  }
+  .about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: .8em;
+  }
+
+  .about h1{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 100;
+    padding: .2em 0 .5em 0;
+    font-size: 2.5rem;
+    line-height: 1.3em;
+  }
+
+  .news{
+    background-color: rgb(211, 0, 0);
+    padding: 1em .5em;
+    color: white;
+    margin-top: .5em;
+  }
+
+  .news button{
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 1em;
+    width: 100%;
+  }
+
+  .news p{
+    margin: 1em 0;
+  }
+  .news h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 100;
+    font-size: 1.7rem;
+  }
+
+  @media screen and (min-width: 768px) {
+    .navbar{
+        flex-direction: row;
+        justify-content: space-between;
+        padding:  0 2em;
+    }
+    .overlay .content{
+        padding-right: 20em;
+    }
+    .foot{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+    }
+  }
+
+/* for laptop screen */
+
+  @media screen and (min-width: 1024px) {
+    .navbar{
+        flex-direction: row;
+        justify-content: space-between;
+        padding:  0 2em;
+    }
+   
+    .overlay .content{
+        padding-right: 40em;
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-areas: 
+        "card1 card1 card2"
+        "card3 card4 card5"
+        "card6 card7 card7"
+        ;
+        gap: 2em;
+    }
+.card1{
+    grid-area: card1;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.card1 .img{
+    margin: 0 1em;
+}
+.card2{
+    grid-area: card2;
+    height: 300px;
+}
+.card3{
+    grid-area: card3;
+}
+.card4{
+    grid-area: card4;
+}
+.card5{
+    grid-area: card5;
+}
+.card6{
+    grid-area: card6;
+    height: 300px;
+}
+.card7{
+    grid-area: card7;
+    flex-direction: row;
+    justify-content: space-between;
+}
+    .about_sec{
+        padding: 3em 15em;
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        grid-template-areas: 
+        "about about about news news"
+        "about about about . ."
+        ;
+        gap: 1em;
+    }
+    .about{
+        grid-area: about;
+    }
+    .news{
+        grid-area: news;
+        height: 200px;
+    }
+    
+    .foot{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+        padding: 3em 6em;
+        padding-bottom: 5em; 
+    }
+    .links{
+        margin: 0 .5em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .links ul{
+        padding: 1em 0;
+        text-align: center;
+    }
+    .email{
+        margin: 0 .5em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .email p{
+        text-align: center;
+    }
+    .email button{
+        width: 100%;
+    }
+    .email input{
+        width: 100%;
+    }
+    .logo_sec{
+        margin: 0 .5em;
+        text-align: center;
+    }
+    .logo_sec .logo{
+        padding: 0;
+        padding-bottom: 1em;
+    }
+    .club{
+        margin: 0 .5em;
+        text-align: center;
+    }
+    .club .p2{
+        margin-bottom: .5em;
+        padding: 0 2em;
+    }
+  }
